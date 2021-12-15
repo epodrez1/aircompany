@@ -2,7 +2,7 @@ package planes;
 
 import models.ClassificationLevel;
 
-public class ExperimentalPlane extends Plane{
+public class ExperimentalPlane extends Plane {
 
     private ClassificationLevel classificationLevel;
 
@@ -10,21 +10,18 @@ public class ExperimentalPlane extends Plane{
                              int maxSpeed,
                              int maxFlightDistance,
                              int maxLoadCapacity,
-                             ExperimentalTypes type,
                              ClassificationLevel classificationLevel) {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
         this.classificationLevel = classificationLevel;
     }
 
-    public ClassificationLevel getClassificationLevel(){
+    public ClassificationLevel getClassificationLevel() {
         return classificationLevel;
-    }
-
     }
 
     @Override
     public boolean equals(Object other) {
-    return super.equals(other);
+        return super.equals(other);
     }
 
     @Override
